@@ -21,6 +21,7 @@ public class Polynomial {
         this.exponents = new int[]{0}; // Zero polynomial
     }
 
+    // Constructor that initializes polynomial from ArrayList
     public Polynomial(ArrayList<Double> coefficients, ArrayList<Integer> exponents){
         this.coefficients = new double[coefficients.size()];
         this.exponents = new int[exponents.size()];
@@ -30,6 +31,7 @@ public class Polynomial {
         }
     }
 
+    // Constructor that initializes polynomial from map
     public Polynomial(SortedMap<Integer, Double> map){
         this.coefficients = new double[map.size()];
         this.exponents = new int[map.size()];
